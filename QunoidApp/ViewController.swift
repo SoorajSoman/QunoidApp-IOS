@@ -104,10 +104,7 @@ class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionV
         carditem.layer.shadowPath = UIBezierPath(roundedRect: carditem.bounds, cornerRadius: carditem.contentView.layer.cornerRadius).cgPath
         return carditem
     }
-    
 
-    
-  
     @objc func connected(_ sender:AnyObject){
         print("you tap image number : \(sender.view.tag)")
         myIndex = sender.view.tag
