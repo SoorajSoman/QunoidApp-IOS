@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:QunoidApp.xcodeproj">
+      location = "group:../QunoidApp/models/Links.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../QunoidApp/models/Profile_image.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../QunoidApp/models/UnSplash.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../QunoidApp/models/Urls.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../QunoidApp/models/User.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705E95351819F64C7BFA8746 /* Pods_QunoidApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4665008EC37D2FBE12A6D7 /* Pods_QunoidApp.framework */; };
 		D30A29BB20E4A8B70004667B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A29BA20E4A8B70004667B /* AppDelegate.swift */; };
 		D30A29BD20E4A8B70004667B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A29BC20E4A8B70004667B /* ViewController.swift */; };
 		D30A29C020E4A8B70004667B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30A29BE20E4A8B70004667B /* Main.storyboard */; };
 		D30A29C220E4A8B70004667B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30A29C120E4A8B70004667B /* Assets.xcassets */; };
 		D30A29C520E4A8B70004667B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30A29C320E4A8B70004667B /* LaunchScreen.storyboard */; };
+		D36F60D320E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png in Resources */ = {isa = PBXBuildFile; fileRef = D36F60D120E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png */; };
+		D36F60D420E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png in Resources */ = {isa = PBXBuildFile; fileRef = D36F60D220E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png */; };
+		D3FF0F3F20E67D390073963D /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F3A20E67D390073963D /* Urls.swift */; };
+		D3FF0F4020E67D390073963D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F3B20E67D390073963D /* User.swift */; };
+		D3FF0F4120E67D390073963D /* UnSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F3C20E67D390073963D /* UnSplash.swift */; };
+		D3FF0F4220E67D390073963D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F3D20E67D390073963D /* Links.swift */; };
+		D3FF0F4320E67D390073963D /* Profile_image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F3E20E67D390073963D /* Profile_image.swift */; };
+		D3FF0F4B20E6906F0073963D /* UIImageViewImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F4A20E6906F0073963D /* UIImageViewImageLoader.swift */; };
+		D3FF0F4E20E729380073963D /* UICollectionCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF0F4D20E729380073963D /* UICollectionCardViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62156F2F5399ABE5A70B1288 /* Pods-QunoidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QunoidApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QunoidApp/Pods-QunoidApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6B4665008EC37D2FBE12A6D7 /* Pods_QunoidApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QunoidApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906FF463FC54281CBD5D5858 /* Pods-QunoidApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QunoidApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QunoidApp/Pods-QunoidApp.release.xcconfig"; sourceTree = "<group>"; };
 		D30A29B720E4A8B70004667B /* QunoidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QunoidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30A29BA20E4A8B70004667B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D30A29BC20E4A8B70004667B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,15 @@
 		D30A29C120E4A8B70004667B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30A29C420E4A8B70004667B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D30A29C620E4A8B70004667B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D36F60D120E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png"; path = "../../../../Desktop/Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png"; sourceTree = "<group>"; };
+		D36F60D220E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png"; path = "../../../../Desktop/Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png"; sourceTree = "<group>"; };
+		D3FF0F3A20E67D390073963D /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		D3FF0F3B20E67D390073963D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3FF0F3C20E67D390073963D /* UnSplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnSplash.swift; sourceTree = "<group>"; };
+		D3FF0F3D20E67D390073963D /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		D3FF0F3E20E67D390073963D /* Profile_image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile_image.swift; sourceTree = "<group>"; };
+		D3FF0F4A20E6906F0073963D /* UIImageViewImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewImageLoader.swift; sourceTree = "<group>"; };
+		D3FF0F4D20E729380073963D /* UICollectionCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionCardViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705E95351819F64C7BFA8746 /* Pods_QunoidApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A22E86B4112E24709C60ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4665008EC37D2FBE12A6D7 /* Pods_QunoidApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE380107C13C6951204640F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62156F2F5399ABE5A70B1288 /* Pods-QunoidApp.debug.xcconfig */,
+				906FF463FC54281CBD5D5858 /* Pods-QunoidApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D30A29AE20E4A8B70004667B = {
 			isa = PBXGroup;
 			children = (
+				D36F60D020E8C897005A1628 /* screenshot */,
 				D30A29B920E4A8B70004667B /* QunoidApp */,
 				D30A29B820E4A8B70004667B /* Products */,
+				AE380107C13C6951204640F2 /* Pods */,
+				3A22E86B4112E24709C60ECE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +97,9 @@
 		D30A29B920E4A8B70004667B /* QunoidApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3FF0F4C20E728E40073963D /* CollectionViewCells */,
+				D3FF0F4720E68F320073963D /* Extension */,
+				D3FF0F3920E67C590073963D /* Models */,
 				D30A29BA20E4A8B70004667B /* AppDelegate.swift */,
 				D30A29BC20E4A8B70004667B /* ViewController.swift */,
 				D30A29BE20E4A8B70004667B /* Main.storyboard */,
@@ -64,6 +110,43 @@
 			path = QunoidApp;
 			sourceTree = "<group>";
 		};
+		D36F60D020E8C897005A1628 /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				D36F60D120E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png */,
+				D36F60D220E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png */,
+			);
+			path = screenshot;
+			sourceTree = "<group>";
+		};
+		D3FF0F3920E67C590073963D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3FF0F3D20E67D390073963D /* Links.swift */,
+				D3FF0F3E20E67D390073963D /* Profile_image.swift */,
+				D3FF0F3C20E67D390073963D /* UnSplash.swift */,
+				D3FF0F3A20E67D390073963D /* Urls.swift */,
+				D3FF0F3B20E67D390073963D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3FF0F4720E68F320073963D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3FF0F4A20E6906F0073963D /* UIImageViewImageLoader.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D3FF0F4C20E728E40073963D /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D3FF0F4D20E729380073963D /* UICollectionCardViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D30A29C920E4A8B70004667B /* Build configuration list for PBXNativeTarget "QunoidApp" */;
 			buildPhases = (
+				D51507D8874D0EE217ED4A4D /* [CP] Check Pods Manifest.lock */,
 				D30A29B320E4A8B70004667B /* Sources */,
 				D30A29B420E4A8B70004667B /* Frameworks */,
 				D30A29B520E4A8B70004667B /* Resources */,
+				D079CD67C2AA9A579F7D6657 /* [CP] Embed Pods Frameworks */,
+				F6560A88D5A5D456BDA896E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,18 +210,85 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30A29C520E4A8B70004667B /* LaunchScreen.storyboard in Resources */,
+				D36F60D320E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.21.58.png in Resources */,
 				D30A29C220E4A8B70004667B /* Assets.xcassets in Resources */,
+				D36F60D420E8C90C005A1628 /* Simulator Screen Shot - iPhone 8 Plus - 2018-07-01 at 12.22.07.png in Resources */,
 				D30A29C020E4A8B70004667B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D079CD67C2AA9A579F7D6657 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QunoidApp/Pods-QunoidApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QunoidApp/Pods-QunoidApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51507D8874D0EE217ED4A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QunoidApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6560A88D5A5D456BDA896E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QunoidApp/Pods-QunoidApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D30A29B320E4A8B70004667B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FF0F4120E67D390073963D /* UnSplash.swift in Sources */,
+				D3FF0F4320E67D390073963D /* Profile_image.swift in Sources */,
+				D3FF0F4220E67D390073963D /* Links.swift in Sources */,
+				D3FF0F4020E67D390073963D /* User.swift in Sources */,
+				D3FF0F4B20E6906F0073963D /* UIImageViewImageLoader.swift in Sources */,
+				D3FF0F4E20E729380073963D /* UICollectionCardViewCell.swift in Sources */,
+				D3FF0F3F20E67D390073963D /* Urls.swift in Sources */,
 				D30A29BD20E4A8B70004667B /* ViewController.swift in Sources */,
 				D30A29BB20E4A8B70004667B /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +425,7 @@
 		};
 		D30A29CA20E4A8B70004667B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62156F2F5399ABE5A70B1288 /* Pods-QunoidApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +440,7 @@
 		};
 		D30A29CB20E4A8B70004667B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906FF463FC54281CBD5D5858 /* Pods-QunoidApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

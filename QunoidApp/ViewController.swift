@@ -7,19 +7,94 @@
 //
 
 import UIKit
+import ObjectMapper
+import Alamofire
+import AlamofireObjectMapper
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionViewDelegate{
+    
+     @IBOutlet weak var collectView: UICollectionView!
+    var UnSplashList=[Unsplash]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //myImageView.imageFromUrl("https://robohash.org/123.png")
         // Do any additional setup after loading the view, typically from a nib.
+        self.userRequest()
+        
+        
+    }
+    
+    
+    func userRequest(){
+        
+        Alamofire.request("https://api.unsplash.com/photos/?client_id=8634366274bd23efb9b023fb9b2c6502e67f7dd5d6a7962b3b49fbee170940f8").responseArray { (response: DataResponse<[Unsplash]>) in
+            print("----------------------------------------------")
+            print(response.result.value)
+            
+            self.UnSplashList = response.result.value!
+            self.collectView.reloadData()
+            
+         
+        }
+//        Alamofire.request("https://api.unsplash.com/photos/?client_id=8634366274bd23efb9b023fb9b2c6502e67f7dd5d6a7962b3b49fbee170940f8").responseJSON{
+//            response in
+//        // Map via ObjectMapper
+//            self.UnSplashList = Mapper<Array<Unsplash>().map()
+//
+//        }
+//
+//        NetworkManager.getUsers(string: "https://api.unsplash.com/photos/?client_id=8634366274bd23efb9b023fb9b2c6502e67f7dd5d6a7962b3b49fbee170940f8",) { json in
+//           // self.UnSplashList = Mapper<Unsplash >().map(JSONObject:response.result.value)
+//
+//            //self.UnSplashList = Mapper<Unsplash>().mapArray(json:json);
+//            //if let jsonData = data as? String {
+//             //   self.UnSplashList = Mapper<Unsplash >().mapArray(JSONString: jsonData)
+//          //  }
+////
+////            if let json = json, let array = json["results"] as? [[String:Any]] {
+////                for item in array {
+////                    if let itunceItem = ItunceItem(JSON: item) {
+////                        print("----------------------------------------------")
+////                        print(itunceItem.description)
+////                    }
+////                }
+////            }
+//        }
+        
+    }
+   
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+       return UnSplashList.count;
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let carditem=collectionView.dequeueReusableCell(withReuseIdentifier: "listitem", for: indexPath)as!  UICollectionCardViewCell
+        
+        var  user:User = UnSplashList[indexPath.row].user!
+        
+        var url:Urls = UnSplashList[indexPath.row].urls!
+        
+        var profile:Profile_image = user.profile_image!
+        
+        carditem.profileName.text=user.username!
+        carditem.descriptionText.text=user.bio
+        carditem.profileImage.setCustomImage(profile.medium);
+        carditem.cardImageBackground.setCustomImage(url.regular);
+        
+        carditem.contentView.layer.cornerRadius = 4.0
+        carditem.contentView.layer.borderWidth = 1.0
+        carditem.contentView.layer.borderColor = UIColor.clear.cgColor
+        carditem.contentView.layer.masksToBounds = false
+        carditem.layer.shadowColor = UIColor.gray.cgColor
+        carditem.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        carditem.layer.shadowRadius = 4.0
+        carditem.layer.shadowOpacity = 1.0
+        carditem.layer.masksToBounds = false
+        carditem.layer.shadowPath = UIBezierPath(roundedRect: carditem.bounds, cornerRadius: carditem.contentView.layer.cornerRadius).cgPath
+        return carditem
     }
-
-
 }
 
