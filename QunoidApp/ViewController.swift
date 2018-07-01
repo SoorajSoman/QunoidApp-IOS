@@ -11,10 +11,13 @@ import ObjectMapper
 import Alamofire
 import AlamofireObjectMapper
 
+var myIndex=0
+var UnSplashList=[Unsplash]()
+
 class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionViewDelegate{
     
      @IBOutlet weak var collectView: UICollectionView!
-    var UnSplashList=[Unsplash]()
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +36,7 @@ class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionV
             print("----------------------------------------------")
             print(response.result.value)
             
-            self.UnSplashList = response.result.value!
+            UnSplashList = response.result.value!
             self.collectView.reloadData()
             
          
@@ -78,12 +81,17 @@ class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionV
         var url:Urls = UnSplashList[indexPath.row].urls!
         
         var profile:Profile_image = user.profile_image!
-        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(connected(_:)))
+
+
         carditem.profileName.text=user.username!
         carditem.descriptionText.text=user.bio
         carditem.profileImage.setCustomImage(profile.medium);
         carditem.cardImageBackground.setCustomImage(url.regular);
-        
+       
+        carditem.cardImageBackground.isUserInteractionEnabled = true
+        carditem.cardImageBackground.tag = indexPath.row
+        carditem.cardImageBackground.addGestureRecognizer(tapGestureRecognizer)
         carditem.contentView.layer.cornerRadius = 4.0
         carditem.contentView.layer.borderWidth = 1.0
         carditem.contentView.layer.borderColor = UIColor.clear.cgColor
@@ -95,6 +103,16 @@ class ViewController: UIViewController ,UICollectionViewDataSource,UICollectionV
         carditem.layer.masksToBounds = false
         carditem.layer.shadowPath = UIBezierPath(roundedRect: carditem.bounds, cornerRadius: carditem.contentView.layer.cornerRadius).cgPath
         return carditem
+    }
+    
+
+    
+  
+    @objc func connected(_ sender:AnyObject){
+        print("you tap image number : \(sender.view.tag)")
+        myIndex = sender.view.tag
+        performSegue(withIdentifier: "segue", sender: self)
+        //Your code for navigate to another viewcontroller
     }
 }
 

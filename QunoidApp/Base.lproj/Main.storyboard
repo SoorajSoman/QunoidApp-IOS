@@ -49,6 +49,10 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-yh-C2v">
                                                     <rect key="frame" x="0.0" y="0.0" width="386" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="to7-vp-IOk" appends="YES" id="37Z-zt-99m"/>
+                                                    </connections>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ey-Tk-zVy">
                                                     <rect key="frame" x="7" y="212" width="58" height="57"/>
@@ -114,11 +118,45 @@
                     </view>
                     <connections>
                         <outlet property="collectView" destination="aEs-TU-ihn" id="Zxq-jn-2Je"/>
+                        <segue destination="Td2-n0-zSu" kind="show" identifier="segue" id="NTi-Nv-aKV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="to7-vp-IOk"/>
             </objects>
             <point key="canvasLocation" x="-79.710144927536234" y="132.88043478260872"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="oFo-H7-bsP">
+            <objects>
+                <viewController id="Td2-n0-zSu" customClass="DetailsViewController" customModule="QunoidApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWc-K4-cl6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0sw-vN-Tqj">
+                                <rect key="frame" x="55" y="171" width="304" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pd-ed-f04">
+                                <rect key="frame" x="186" y="444" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cPs-sl-iwJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="0sw-vN-Tqj" id="Tfz-ur-KAu"/>
+                        <outlet property="label" destination="1pd-ed-f04" id="41S-T4-WEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoP-Y5-Cnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="133.69565217391306"/>
         </scene>
     </scenes>
     <resources>

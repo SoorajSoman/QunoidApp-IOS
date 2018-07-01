@@ -11,6 +11,7 @@ import UIKit
 class UICollectionCardViewCell: UICollectionViewCell {
     
    
+    
     @IBOutlet weak var descriptionText: UILabel!
     
     @IBOutlet weak var cardImageBackground: UIImageView!
